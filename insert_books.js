@@ -13,126 +13,107 @@ const collectionName = 'books';
 // Sample book data
 const books = [
   {
-    title: 'To Kill a Mockingbird',
-    author: 'Harper Lee',
-    genre: 'Fiction',
-    published_year: 1960,
-    price: 12.99,
+    title: "Man's Search for Meaning",
+    author: "Viktor E. Frankl",
+    genre: "Psychology",
+    published_year: 1946,
+    price: 10.99,
+    in_stock: true,
+    pages: 184,
+    publisher: "Beacon Press"
+  },
+  {
+    title: "The Interpretation of Dreams",
+    author: "Sigmund Freud",
+    genre: "Psychology",
+    published_year: 1899,
+    price: 14.5,
+    in_stock: false,
+    pages: 630,
+    publisher: "Basic Books"
+  },
+  {
+    title: "Thinking, Fast and Slow",
+    author: "Daniel Kahneman",
+    genre: "Cognitive Psychology",
+    published_year: 2011,
+    price: 18.99,
+    in_stock: true,
+    pages: 512,
+    publisher: "Farrar, Straus and Giroux"
+  },
+  {
+    title: "The Sociological Imagination",
+    author: "C. Wright Mills",
+    genre: "Sociology",
+    published_year: 1959,
+    price: 13.75,
+    in_stock: true,
+    pages: 256,
+    publisher: "Oxford University Press"
+  },
+  {
+    title: "Influence: The Psychology of Persuasion",
+    author: "Robert B. Cialdini",
+    genre: "Social Psychology",
+    published_year: 1984,
+    price: 15.25,
     in_stock: true,
     pages: 336,
-    publisher: 'J. B. Lippincott & Co.'
+    publisher: "Harper Business"
   },
   {
-    title: '1984',
-    author: 'George Orwell',
-    genre: 'Dystopian',
-    published_year: 1949,
-    price: 10.99,
-    in_stock: true,
-    pages: 328,
-    publisher: 'Secker & Warburg'
-  },
-  {
-    title: 'The Great Gatsby',
-    author: 'F. Scott Fitzgerald',
-    genre: 'Fiction',
-    published_year: 1925,
-    price: 9.99,
-    in_stock: true,
-    pages: 180,
-    publisher: 'Charles Scribner\'s Sons'
-  },
-  {
-    title: 'Brave New World',
-    author: 'Aldous Huxley',
-    genre: 'Dystopian',
-    published_year: 1932,
-    price: 11.50,
+    title: "The Presentation of Self in Everyday Life",
+    author: "Erving Goffman",
+    genre: "Sociology",
+    published_year: 1956,
+    price: 12.5,
     in_stock: false,
-    pages: 311,
-    publisher: 'Chatto & Windus'
+    pages: 259,
+    publisher: "Anchor Books"
   },
   {
-    title: 'The Hobbit',
-    author: 'J.R.R. Tolkien',
-    genre: 'Fantasy',
-    published_year: 1937,
+    title: "Quiet: The Power of Introverts in a World That Can't Stop Talking",
+    author: "Susan Cain",
+    genre: "Personality Psychology",
+    published_year: 2012,
+    price: 16.99,
+    in_stock: true,
+    pages: 352,
+    publisher: "Crown Publishing"
+  },
+  {
+    title: "Outliers: The Story of Success",
+    author: "Malcolm Gladwell",
+    genre: "Sociology",
+    published_year: 2008,
     price: 14.99,
     in_stock: true,
-    pages: 310,
-    publisher: 'George Allen & Unwin'
+    pages: 336,
+    publisher: "Little, Brown and Company"
   },
   {
-    title: 'The Catcher in the Rye',
-    author: 'J.D. Salinger',
-    genre: 'Fiction',
-    published_year: 1951,
-    price: 8.99,
+    title: "The Body Keeps the Score",
+    author: "Bessel van der Kolk",
+    genre: "Clinical Psychology",
+    published_year: 2014,
+    price: 17.95,
     in_stock: true,
-    pages: 224,
-    publisher: 'Little, Brown and Company'
+    pages: 464,
+    publisher: "Penguin Books"
   },
   {
-    title: 'Pride and Prejudice',
-    author: 'Jane Austen',
-    genre: 'Romance',
-    published_year: 1813,
-    price: 7.99,
-    in_stock: true,
-    pages: 432,
-    publisher: 'T. Egerton, Whitehall'
-  },
-  {
-    title: 'The Lord of the Rings',
-    author: 'J.R.R. Tolkien',
-    genre: 'Fantasy',
-    published_year: 1954,
-    price: 19.99,
-    in_stock: true,
-    pages: 1178,
-    publisher: 'Allen & Unwin'
-  },
-  {
-    title: 'Animal Farm',
-    author: 'George Orwell',
-    genre: 'Political Satire',
-    published_year: 1945,
-    price: 8.50,
+    title: "The Lucifer Effect: Understanding How Good People Turn Evil",
+    author: "Philip Zimbardo",
+    genre: "Social Psychology",
+    published_year: 2007,
+    price: 15.95,
     in_stock: false,
-    pages: 112,
-    publisher: 'Secker & Warburg'
-  },
-  {
-    title: 'The Alchemist',
-    author: 'Paulo Coelho',
-    genre: 'Fiction',
-    published_year: 1988,
-    price: 10.99,
-    in_stock: true,
-    pages: 197,
-    publisher: 'HarperOne'
-  },
-  {
-    title: 'Moby Dick',
-    author: 'Herman Melville',
-    genre: 'Adventure',
-    published_year: 1851,
-    price: 12.50,
-    in_stock: false,
-    pages: 635,
-    publisher: 'Harper & Brothers'
-  },
-  {
-    title: 'Wuthering Heights',
-    author: 'Emily Brontë',
-    genre: 'Gothic Fiction',
-    published_year: 1847,
-    price: 9.99,
-    in_stock: true,
-    pages: 342,
-    publisher: 'Thomas Cautley Newby'
+    pages: 576,
+    publisher: "Random House"
   }
 ];
+
 
 // Function to insert books into MongoDB
 async function insertBooks() {
