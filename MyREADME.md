@@ -89,4 +89,4 @@ Make sure the following files are visible in your repository:
 - queries.js
 - Screenshots
 - README.md
-- MyREADMR.md
+- MyREADME.md
