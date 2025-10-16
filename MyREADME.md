@@ -63,12 +63,12 @@ load("queries.js")
 ```
 
 This script will:
--Display books from different genres
--Update and delete specific records
--Show filtered and sorted data
--Perform aggregation queries
--Create indexes and display performance stats
--You’ll see results directly in the shell.
+- Display books from different genres
+- Update and delete specific records
+- Show filtered and sorted data
+- Perform aggregation queries
+- Create indexes and display performance stats
+- You’ll see results directly in the shell.
 
 ## Step 5: View Data in MongoDB Compass
 1. Open MongoDB Compass
@@ -79,13 +79,14 @@ plp_bookstore
 books
 5. You should now see your sample book documents displayed.
 Take a screenshot showing:
--Database name (plp_bookstore)
--Collection name (books)
--A few documents (title, author, genre, price)
+- Database name (plp_bookstore)
+- Collection name (books)
+- A few documents (title, author, genre, price)
 
 ## Step 6: Push Everything to GitHub
 Make sure the following files are visible in your repository:
--insert_books.js
--queries.js
--Screenshots
--README.md
+- insert_books.js
+- queries.js
+- Screenshots
+- README.md
+- MyREADMR.md
